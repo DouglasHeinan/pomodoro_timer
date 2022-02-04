@@ -29,6 +29,11 @@ def main():
         check_mark.config(text="")
         global reps
         reps = 0
+        global count
+        count = 0
+        start_button.config(text="Start")
+        global run_timer
+        run_timer = False
 
     # ---------------------------- TIMER MECHANISM ------------------------------- #
 
@@ -88,7 +93,6 @@ def main():
         else:
             run_timer = True
             count_down(count)
-
 
     # ---------------------------- UI SETUP ------------------------------- #
 
